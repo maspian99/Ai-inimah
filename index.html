@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI YouTube Shorts Generator</title>
+</head>
+<body>
+    <h2>Masukkan URL YouTube</h2>
+    <input type="text" id="youtubeUrl" placeholder="Masukkan link video">
+    <button onclick="generateShorts()">Generate</button>
+    <h3>Hasil:</h3>
+    <video id="shortsVideo" controls></video>
+
+    <script>
+        function generateShorts() {
+            let url = document.getElementById("youtubeUrl").value;
+            fetch('/generate', {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ url: url })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("shortsVideo").src = data.video_url;
+            });
+        }
+    </script>
+</body>
+</html>

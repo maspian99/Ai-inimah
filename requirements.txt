@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-yt-dlp
-whisper
-openai
-jinja2
-pytube

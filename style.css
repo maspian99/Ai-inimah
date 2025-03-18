@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px gold;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gold;
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+#loading {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.progress-bar {
+    width: 60%;
+    height: 10px;
+    background-color: gray;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    width: 0%;
+    background-color: gold;
+}
+
+#thumbnail img {
+    width: 300px;
+    margin-top: 20px;
+}
+
+.clip {
+    background-color: #333;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.download-btn {
+    margin-top: 10px;
+    padding: 5px

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff00ff, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input, select, button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+#thumbnail {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#progressContainer {
+    width: 100%;
+    background: #333;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    display: none;
+}
+
+#progressBar {
+    height: 100%;
+    background: linear-gradient(90deg, #ff00ff, #ffcc00);
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.5s;
+}
+
+#progressText {
+    position: absolute;
+    width: 100%;
+    top: 2px;
+    left: 0;
+    font-size: 14px;
+}
+
+#clipsContainer {
+    margin-top: 20px;
+}
+
+.clip {
+    background: black;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINZ AI - YouTube Shorts Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">PINZ AI</h1>
+        <input type="text" id="youtubeUrl" placeholder="Masukkan URL YouTube">
+        <button id="generateBtn">Generate</button>
+        
+        <div id="videoInfo" style="display: none;">
+            <img id="thumbnail" src="" alt="Thumbnail Video">
+            <p id="title"></p>
+            <label for="duration">Pilih Durasi:</label>
+            <select id="duration">
+                <option value="30">Kurang dari 30 detik</option>
+                <option value="60">30 - 60 detik</option>
+                <option value="180">60 - 180 detik</option>
+            </select>
+            <button id="convertBtn">Convert to Clips</button>
+            <div id="progressContainer">
+                <div id="progressBar"></div>
+                <p id="progressText">0%</p>
+            </div>
+        </div>
+
+        <div id="clipsContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
